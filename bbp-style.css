@@ -71,76 +71,13 @@
   
   
   /******** bbpress *********/
-  /* ##??
-   * 
-   * - white: white
-   * - gray: whitesmoke
-   * - black: slategray
-   * - sub: #EEF9FF
-   * - main: #AAD6EC
-   * 
-   * ??????????????????????????????????css?????????
-   *
-  */
-  
-  /*forum??????????*/	
-  .naname {
-    transform: rotate(-8deg);
-  }
-  
+
+  /*購読・お気に入りボタン消す*/	
   #bbpress-forums #subscription-toggle,
   #bbpress-forums #favorite-toggle {
     display: none !important;
   }
   
-  
-  
-  /*bbpress??????????
-  
-  
-  #bbpress-forums > #subscription-toggle{
-  float:right;
-  }
-  
-  #bbpress-forums div.bbp-reply-content a.subscription-toggle,
-  #subscription-toggle a{
-  font-weight: 200;
-  font-size: 14px;
-  padding: 4px 16px 4px 16px;
-  border: 0px solid #AAD6EC;
-  border-radius: 13px;
-  background-color: #e6e6e6;
-  text-decoration: none;
-  color: black;
-  }
-  
-  #bbpress-forums div.bbp-reply-content a.subscription-toggle,
-  #subscription-toggle a:hover{
-  background-color: #EEF9FF;
-  color: #21759b;
-  }
-  
-  #bbpress-forums div.bbp-reply-content .is-subscribed a.subscription-toggle,
-  #subscription-toggle .is-subscribed a.subscription-toggle{
-  border: 0px solid #aad6ec;
-  background-color: #aad6ec;
-  padding: 4px 8px 4px 8px
-  }
-  */
-  
-  /*bbpress?????????????
-  #bbpress-forums > #favorite-toggle{
-  float:right;
-  }
-  
-  #bbpress-forums div.bbp-reply-content a.favorite-toggle,
-  #favorite-toggle a{
-  font-weight: 200;
-  font-size: 14px;
-  text-decoration: none;
-  color: black;
-  }
-  */
   
   /*bbpress?????????*/
   #bbp_search{
@@ -534,65 +471,6 @@
           float: right;
           clear: both;
   }
-  
-  /*???????????*/	
-  #bbpress-forums > #subscription-toggle{
-  margin:10px;
   }
   
-  #bbpress-forums > #favorite-toggle{
-  margin:10px;
-  }
-  }
-  
-  /* bbPress????????????????? */
-  /* ???????????????????????*/
-  .bbp-plink-button{
-  pointer-events: none;
-  }
-  
-  .logged-in .bbp-plink-button{
-  pointer-events: auto;
-  }
-  
-  /* ???????*/
-  
-  .bbp-plink-button {
-      border: 1px solid #6e8b99;
-      text-align: center;
-      padding: 8px;
-      background: #eee;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 1.4em;
-  
-  }
-  
-  /* ????? */
-  @media only screen and (min-width: 768px) {
-  .bbp-plink-button {
-      max-width:340px;
-  }
-  }
-  
-  /* ????? */
-  @media only screen and (max-width: 767px) {
-  .bbp-plink-button {
-      width:100%;	
-  }
-  }
-  
-  
-  .bbp-plink-button a{
-  text-decoration:none;
-  }
-  
-  .bbp-plink-button:hover {
-      background: #c3dfe3;
-      color: #fff;
-  }
-  
-  .bbp-plink-button a:hover {
-      color: #fff;
-  }
   /******** bbpress *********/
