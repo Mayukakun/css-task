@@ -211,7 +211,6 @@
   
   #bbpress-forums li.bbp-body ul.topic li.bbp-topic-title a.bbp-topic-permalink {
     display: block;
-    font-weight: 900;
     color:  #156075;
     text-decoration: none;
     padding: 15px 15px 15px 0;
