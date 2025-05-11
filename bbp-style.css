@@ -411,6 +411,10 @@
     border-radius: 3px;
   }
 
+  /*コメ欄ツールバー消す*/	
+  #bbpress-forums div.bbp-the-content-wrapper div.quicktags-toolbar{
+  display:none;
+  }
 
   @media(max-width:768px){ 
     #bbpress-forums
@@ -439,7 +443,7 @@
        border-bottom: 10px solid whitesmoke;
      }
 
-/*スマホサイト編集ボタン*/
+  /*スマホサイト編集ボタン*/
      span.bbp-admin-links {
        float: right;
        clear: both;
