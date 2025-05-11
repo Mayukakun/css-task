@@ -78,8 +78,6 @@
     display: none !important;
   }
   
-  
-  /*bbpress?????????*/
   #bbp_search{
   font-size: 16px;
   height: 28px;
@@ -102,18 +100,15 @@
   font-size: 16px !important;
   }
   
-  
   #bbpress-forums 
   div.bbp-the-content-wrapper 
-  textarea.bbp-the-content { font-size: 18px
+  textarea.bbp-the-content { 
+  font-size: 18px;
   }
   
   input#bbp_topic_title{
   font-size: 20px;
   }
-  
-  
-  /*bbPress?????????*/
   
   .bbp-breadcrumb{
   display: none;
@@ -150,7 +145,7 @@
     border-radius: 20px;
       padding: .5em 1em .5em 5px;
     min-width: 200px;
-    max-width: 100%; ?
+    max-width: 100%;
     color: slategray;
     background: whitesmoke;
   }
@@ -169,8 +164,7 @@
     display: block;
     font-size: 1.2em;
     font-weight: 500;
-   ?color: #AAD6EC;
-    /*??????????*/
+    color: #AAD6EC;
     text-decoration: none;
     padding: 15px 15px 15px 0;
   }
@@ -187,9 +181,6 @@
     background: whitesmoke;
     color: slategray;
   }
-  
-  
-  /*bbPress????????*/
   
   .bbp-template-notice, #bbpress-forums li.bbp-topic-title p.bbp-topic-meta, #bbpress-forums li.bbp-topic-voice-count, #bbpress-forums li.bbp-topic-freshness, #bbpress-forums .bbp-pagination {
     display: none;
@@ -220,9 +211,8 @@
   
   #bbpress-forums li.bbp-body ul.topic li.bbp-topic-title a.bbp-topic-permalink {
     display: block;
-   ?font-weight: 900;
+    font-weight: 900;
     color:  #156075;
-      /*??????????*/
     text-decoration: none;
     padding: 15px 15px 15px 0;
   }
@@ -240,9 +230,6 @@
     color: slategray;
   }
   
-  
-  /*??????????*/
-  
   #bbpress-forums div.bbp-topic-form form#new-post fieldset.bbp-form {
     background: white;
     border: none;
@@ -259,8 +246,7 @@
   }
   
   #bbpress-forums div.bbp-topic-form form#new-post fieldset.bbp-form legend::before {
-   ?font-family: "Font Awesome 5 Free";
-      content: "??";
+    content: "✏︎";
     font-weight: 900;
     font-size: 2.4em;
     color: white;
@@ -268,14 +254,12 @@
     left: -32px;
   }
   
-  <!-- ???????????CSS??-->
-  
   #bbpress-forums div.bbp-topic-form form#new-post fieldset.bbp-form>div>p:nth-of-type(1)::before{
-    content: "????";
+    content: "✏︎";
   }
   
   #bbpress-forums div.bbp-topic-form form#new-post fieldset.bbp-form>div>div.bbp-the-content-wrapper::before {
-    content: "??";
+    content: "✏︎";
   }
   
   #bbpress-forums div.bbp-topic-form form#new-post fieldset.bbp-form>div>p:nth-of-type(1)::before,
@@ -312,9 +296,6 @@
     border-radius: 3px;
   }
   
-  
-  /*????????*/
-  
   #bbpress-forums ul.bbp-replies {
     border: none;
   }
@@ -332,8 +313,6 @@
     display: none;
   }
   
-  
-  /*?????????*/
   #bbpress-forums span.bbp-admin-links {
       font-size: 14px;
   }
@@ -383,8 +362,7 @@
     border-right: 10px solid whitesmoke;
   }
   
-  /*??????*/
-  
+  /*返信フォーム*/
   #bbpress-forums div.bbp-reply-form form#new-post fieldset.bbp-form legend {
     position: relative;
     padding: 10px 40px 10px 10px;
@@ -395,9 +373,8 @@
   }
   
   #bbpress-forums div.bbp-reply-form form#new-post fieldset.bbp-form legend::before {
-   ?font-family: "Font Awesome 5 Free";
-      content: "??";
-      font-weight: 900;
+    content: "✏︎";
+    font-weight: 900;
     font-size:2.4em;
     color: white;
     position: absolute;
