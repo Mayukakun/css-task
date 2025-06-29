@@ -1027,7 +1027,7 @@ background:#daecf2!important;
   float: center;
   width: 100%;
   margin-bottom: 60px;
-	padding-top:0;
+  padding-top:0;
 }
 
 .lp-user-profile,
@@ -1038,10 +1038,10 @@ background:#daecf2!important;
 	font-size:1.3em!important;
 	letter-spacing:0.1em;
 	font-weight:500;
-line-height:1.5em;
-border-bottom:3px dotted #ccc;
-margin:0 3em!important;
-padding-bottom:12px;
+    line-height:1.5em;
+    border-bottom:3px dotted #ccc;
+    margin:0 3em!important;
+    padding-bottom:12px;
 }
 
 /* Learnpressプロフ画面の謎ボックスを消す*/
@@ -1130,15 +1130,11 @@ display: none;
 	margin-bottom:0;
 	}	
 	
-/*.course-sidebar-preview .course-time{
-margin-bottom:-135px;
-	}*/
-	
 	
 .course-results-progress, .course-time,
 .course-price {	
 	padding:0.6em;
-background:#f0efe9!important;
+    background:#f0efe9!important;
 	box-shadow: 0px 0px 6px 0px #c7c7c7; 
 	border-radius:5px;
 	}	
@@ -1147,11 +1143,11 @@ background:#f0efe9!important;
 .course-sidebar-preview{
 	z-index: 500;
 	position: fixed;
-  bottom: 4em;
-  left: 2em;
+    bottom: 4em;
+    left: 2em;
 	width:300px;
-background:transparent!important;
-	}		
+    background:transparent!important;
+}		
 	
 .course-results-progress,
 .course-time, 
@@ -1172,16 +1168,16 @@ background:transparent!important;
 .lp-archive-courses,
 .lp-entry-content,
 .entry-content-left{
-flex-direction:column!important;
+    flex-direction:column!important;
 	width:100%!important;
-  margin-bottom: 0px!important;
+    margin-bottom: 0px!important;
 }
 	
 .course-summary-sidebar__inner>div{
-		padding:0!important;
+    padding:0!important;
 	}	
 .course-summary-sidebar, .course-summary-sidebar__inner {
-			margin:0 0 50px!important;
+	margin:0 0 50px!important;
 	}	
 }
 
@@ -1219,102 +1215,6 @@ flex-direction:column!important;
 }
 }
 /***** learn press ********/
-
-
-/******** bbpress *********/
-
-/*@media(max-width:480px){ 
- #bbpress-forums
-
-div.reply {
-    height: auto;
-	  width: 100%;
-	  box-sizing: border-box
-  }	
-  #bbpress-forums .bbp-body div.bbp-reply-author {
-    margin: 0;
-    min-height: 85px;
-		border-bottom: 0px;
-  }
-  #bbpress-forums .bbp-body div.bbp-reply-content {
-    margin: 0;
-  }
-  #bbpress-forums .bbp-body div.bbp-reply-content p {
-    padding: .5em 1em;
-    margin: 0;
-  }
-  #bbpress-forums div.bbp-reply-content::before {
-    top: -20px;
-    left: 20px;
-    border: 10px solid transparent;
-    border-bottom: 10px solid whitesmoke;
-  }
-} */
-
-
-/*返信フォーム*/
-
-/* #bbpress-forums div.bbp-reply-form form#new-post fieldset.bbp-form legend {
-  position: relative;
-  padding: 10px 40px 10px 10px;
-  margin: 0 0 1em;
-  line-height: 20px;
-  background: #EEF9FF;
-  border-left: 40px solid #AAD6EC;
-}
-
-#bbpress-forums div.bbp-reply-form form#new-post fieldset.bbp-form legend::before {
-  font-family: "Font Awesome 5 Free";
-	content: "✏︎";
-	font-weight: 900;
-  font-size:2.4em;
-  color: white;
-  position: absolute;
-  left: -32px;
-}
-
-#bbpress-forums div.bbp-reply-form form#new-post fieldset.bbp-form {
-  border: none;
-  padding: 0;
-  background: white;
-}
-
-#bbpress-forums div.bbp-reply-form form#new-post fieldset.bbp-form textarea#bbp_reply_content {
-  width: 100%;
-  background: whitesmoke;
-  border: none;
-  box-shadow: none;
-  outline: none;
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-#bbpress-forums div.bbp-reply-form form#new-post fieldset.bbp-form .bbp-submit-wrapper {
-  float: none;
-  text-align: center;
-}
-
-#bbpress-forums div.bbp-reply-form form#new-post fieldset.bbp-form .bbp-submit-wrapper button#bbp_reply_submit {
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
-  background: #AAD6EC;
-  color: white;
-  border: none;
-  border-radius: 3px;
-} */
-
-/*スマホサイト編集ボタン*/
-/* @media only screen and (max-width: 480px) {
-
-span.bbp-admin-links {
-		float: right;
-		clear: both;
-}
-} */
-
-
-/******** bbpress *********/
 
 
 /*******展開ボックス*********/
@@ -1550,15 +1450,6 @@ line-height:1.5em;
 /********展開ボックス********/
 
 
-/*何に使われているかわからないもの*/		
-p.box {
-      height: 6.8em;
-      overflow: auto;
-      border: #1e73be 1px dashed;
-      background-color: #c8f1f4;
-}
-
-
 /*******Topへ戻るボタン******/
 .pagetop {
 z-index: 500;
@@ -1751,7 +1642,6 @@ padding: 55px 0px;
   font-weight: bold;
   color: #333;
 }
-
 
 /*********ハンバーガー*******/
 
@@ -2256,4 +2146,13 @@ flex-wrap: nowrap!important;
   display: block;
 }
 	
+}
+
+
+/*何に使われているかわからないもの*/		
+p.box {
+      height: 6.8em;
+      overflow: auto;
+      border: #1e73be 1px dashed;
+      background-color: #c8f1f4;
 }
