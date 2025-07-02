@@ -1,9 +1,10 @@
+/******画像アップローダー******/
+
 /* 画像アップローダーのイメージ拡大サイズなど */
 .comment-preview-image {
   height: auto;
   display: block;
 }
-
 
 /* 画像アップロード中オーバーレイにぐるぐるを回す */
 #upload-overlay {
@@ -42,158 +43,15 @@
   100% { transform: rotate(360deg); }
 }
 
-
-
-
-/*learnpressレッスン返信の編集ボタン消すー編集ウインドウを作りたい*/
-.edit-link{
-	display:none;}
-
-.widget-area .widget{margin-bottom:0;}
-
-.mini{font-size:90%; color:#8a7440; display:inline-block; line-height:1.5em; margin:0 0 0 13px;}
-
-.entry-content p{
-	line-height:1.5em;
-	margin:0 0 14px;}
-.wp-block-image{
-	margin:1em 0 0.5em;}
-
-
-/*行間狭めのフレーム*/
-.inst_kakomi_small {
-color: 444;
-border-top: solid 2px #dbdbdb;
-border-bottom: solid 2px #dbdbdb;
-background:#f5f5f5; 
-margin:20px auto!important;
-padding:5px;	
-}
-.inst_kakomi_small p {
-margin: 15px;
-padding: 0;
-}
-
 /*画像添付ボタンレイアウト*/
  .comment-respond .comment-form input{
 	 font-size:17px;
 }
 
-/*レッスンページのタイトル調整*/
-#popup-header .course-title a{
-	font-size:20px;
-}
-.fa{
-	font-size:23px;
-}
-
-/*レッスンリストの折りたたみボタン*/
-#sidebar-toggle{
-	background:#82abb0;
-	box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
-	border:1px solid #d9e0f1;
-	
-}
+/******画像アップローダー******/
 
 
-/*ゆっくりフロントページのボタン*/
-.otameshi-button{
-	width:180px;
-	margin:2px 0!important;
-	text-align:center;
-}	
-
-.cart-button{
-	width:80px;
-	margin:0 2px 5px 0!important;
-}
-
-/*learnpress オーダーページ消す*/
-.order_hamusan img{
-	display: block;
-	margin: 40px auto;
-	max-width: 80%;
-	width: 300px;
-}
-
-.lp-terms-and-conditions,
-.course-price,
-.price,
-.lp-checkout-form__before,
-.secure-connection,
-.checkout-order,
-.learn-press-checkout-comment{
-	display:none;
-}
-#checkout-order-action{
-	display:none;
-}
-
-#learn-press-checkout .payment-methods .lp-payment-method.selected>label{
-	display:none;
-}
-
-
-/*承認待ちコメントにメッセージをつけて薄くする*/
-.comment-content-ap p{
-    opacity: 0.48;
-}
-.comment-content-ap img{
-	max-width:100%;
-}
-.comment-awaiting-moderation{
-	margin:20px;
-	line-height:1.5em;
-  padding: 0.4em 0.5em;
-  color: #494949;
-  background: #f4f4f4;
-  border-left: solid 5px #82abb0;/*左線*/
-  border-bottom: solid 3px #d7d7d7;/*下線*/
-}
-
-
-
-.um-misc-img::after{
-	white-space:pre;
-	content: '\Aサイトの利用状況をみる';
-    font-size: 15px;
-	font-weight:300;
-}
-/*UMリンクの下線を消す*/
-.um *, 
-.um :before, 
-.um :after{
-	text-decoration:none
-}
-
-
-
-/* コメント欄のリンクにアンダーライン*/
-.comment-content a{
-text-decoration:underline;
-}
-
-
-/* 質問の入力文字大きく*/
-#respond form textarea {
-	font-size:1.1em;
-}
-
-.course-description p{
-margin-bottom:1em;
-}
-.course-description img{
-margin:0.5em;
-}
-
-.pc_space{
-	display:none
-}
-
-.wp-block-buttons{
-	margin:10px;
-}
-
+/**********ブログパーツや囲み*********/
 
 /*ブルーのメモカード*/
 .memocards{
@@ -261,7 +119,6 @@ margin-bottom:1em;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
 }
-
 
 
 /* finishフレーム*/
@@ -333,13 +190,7 @@ font-size:15px !important;
 	padding: 0.5em 0em;
 }
 
-/*PC表示の周囲余白を調整*/
-@media screen and (min-width: 960px) {
-	body .site {
-		padding: 0 60px;
-		
-}
-}
+
 
 /*囲み装飾*/	
 .kakomi1 {
@@ -377,6 +228,20 @@ padding:20px 20px;
   background:#f0efe9; 
 }
 
+/*行間狭めのinst_kakomiフレーム*/
+.inst_kakomi_small {
+color: 444;
+border-top: solid 2px #dbdbdb;
+border-bottom: solid 2px #dbdbdb;
+background:#f5f5f5; 
+margin:20px auto!important;
+padding:5px;	
+}
+.inst_kakomi_small p {
+margin: 15px;
+padding: 0;
+}
+
 .kasure{
 background: #fafafa;
 border-radius: 20px;
@@ -391,7 +256,6 @@ margin:2em 0!important;
     margin: 0 0 14px; 
     padding: 0;
 }
-
 
 
 /*ブログタイトルの装飾*/
@@ -496,31 +360,51 @@ font-size:26px !important;
 font-weight:350!important;
 }
 
+/*ゆっくりフロントページのボタン*/
+.otameshi-button{
+	width:180px;
+	margin:2px 0!important;
+	text-align:center;
+}	
 
-/*過去に使っていた無料レシピのタイトルと見出し*/	
-.inst_title {
-  color: 444;
-  text-align: center;
-  padding: 1em;
-  border-top: solid 2px #f0efe9;
-  border-bottom: solid 2px #f0efe9;
-  background:#fafafa; 
+.cart-button{
+	width:80px;
+	margin:0 2px 5px 0!important;
 }
 
-.recipe_title {
-font-size:20px!important;
-font-weight:240 !important;
-margin-top:20px !important;
-	}
-
-.m1 {
-font-size:25px !important;
-	font-weight:240 !important;
-	margin-bottom:60px !important;
-	}/*過去のchタイトル用*/
+/**********ブログパーツや囲み*********/
 
 
-/**********コメント*********/
+/**********コメント欄カスタム*********/
+
+/*承認待ちコメントにメッセージをつけて薄くする*/
+.comment-content-ap p{
+    opacity: 0.48;
+}
+.comment-content-ap img{
+	max-width:100%;
+  opacity: 0.48;
+}
+.comment-awaiting-moderation{
+	margin:20px;
+	line-height:1.5em;
+  padding: 0.4em 0.5em;
+  color: #494949;
+  background: #f4f4f4;
+  border-left: solid 5px #82abb0;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+
+/* コメント欄のリンクにアンダーライン*/
+.comment-content a{
+text-decoration:underline;
+}
+
+/* 質問欄の入力文字大きく*/
+#respond form textarea {
+	font-size:1.1em;
+}
+
 /*コメントフォームに説明を足す*/
 .comment-form-comment label{
 font-size:0;
@@ -626,7 +510,8 @@ margin-bottom:1em;
   border-width: 0px 20px 20px 20px;
 }
 
-@media screen and (max-width: 600px) {
+/*スマホ*/
+@media (max-width: 767px) {
 
 /*コメント欄をブロック分けして色をつける*/
 .comments-area{
@@ -660,12 +545,11 @@ margin: 0 0 1.5rem;
 	border-radius:10px;
 }		
 }
-/**********コメント*********/
+/**********コメント欄カスタム*********/
 
 
+/******カスタムサイドバー******/
 
-
-/******bbpサイドバーを整える******/	
 #bbp-sidebar {
 	margin-top:50px;
 	width:250px;
@@ -689,8 +573,8 @@ margin: 0 0 1.5rem;
    width: 90%;
 }
 
-
-@media screen and (min-width: 600px) {
+/* タブレット　PC */
+@media (min-width: 768px) {
 #shop-sidebar {
 	float: right;
 	text-align: right;
@@ -736,10 +620,28 @@ margin: 0 0 1.5rem;
    padding: 0 0 30px;
 }
 }
-/*****shopサイドバーを整える*******/
+
+/*****カスタムサイドバー*******/
 
 
 /******レイアウトの調整*******/
+
+/*PC表示の周囲余白を調整*/
+@media (min-width: 1025px) {
+	body .site {
+		padding: 0 60px;
+		
+}
+}
+
+.pc_space{
+	display:none
+}
+
+.wp-block-buttons{
+	margin:10px;
+}
+
 /* フッター関連ボックスのスペース調整 */
 .osusume_title {line-height:1.3em!important;
 margin:0px!important;
@@ -830,394 +732,12 @@ img.wp-post-image {
     color: #444;
 }
 
-
 /*****レイアウトの調整********/
 
 
-/****** UM *******/
-
-/*UM サイトの利用状況をみるレイアウト*/
-.um-misc-setsumei {
-    font-size:15px;
-	font-weight:500;
-	margin-top:5px;
-}
-
-/****** learn press *******/
-
-/*ログインしてくださいメッセージをやさしめグレーに*/
-.learn-press-message.error{
-	color:#706b5e;
-	background-color:#faf9f5;
-}
-
-/*続きを受講するボタンの表示*/
-/*今すぐ購入ボタン*/
-form[name="purchase-course"] .lp-button.button {
-    font-size: 0px;
-}
-button.button-purchase-course:before {
-    content: 'レッスンを購入する';
-    display: block;
-	  font-size: 16px;
-}
-
-/*今すぐ開始ボタン*/
-button.button-enroll-course:before {
-    content: 'このレッスンを受講する';
-    display: block;
-	  font-size: 16px;
-}
-@media screen and (max-width: 600px) {
-button.button-enroll-course:before {
-    content: 'このレッスンを受講する';
-    display: block;
-	  font-size: 13px;
-}
-}
-
-/*次へボタン*/
-button.course-btn-continue:before {
-    content: '続きを受講する';
-    display: block;
-	  font-size: 16px;
-}
-.course-btn-continue{
-	font-size:13px;
-}
-
-
-/*Learnpress横長携帯の場合はヘッダーフッターを消す*/
-@media(max-height:370px) {
-#popup-course 
-#popup-header {
-  width: 0;
-}	
-	
-.course-title {
-	display: none;
-}
-.back-course {
-	display: none;
-}
-.course-item-nav  {
-	display: none;
-}
-
-#popup-course 
-#popup-content {
-margin: 0 0 0 0;
-}
-
-#popup-course 
-#popup-footer {
-  width: 0 ;
-	padding: 0 ; 
-}
-}
-
-/*そしてヘッダーの文字色を見えるように*/
-#popup-course 
-#popup-header 
-.course-title a{
-color: #21759B;
-}
-
-#popup-course 
-#popup-header
-.back-course {
-color: #21759B;
-}
-
-
-/* レッスンボタン等調整 */
-.content-item-description section-kansei{
-	margin:1em 0;
-	font-size:16px!important;
-	display:block;
-	text-align:center;
-	font-weight:500;
-}
-
-.completed{
-	margin:0.5em 2em 2em!important;
-}
-
-.kansei{
-	margin-top:0.5em;
-	display:block;
-	color:purple;
-}
-
-
-/* learnpress レイアウト調整 */
-
-.lesson_flame {
-	padding: 1em!important;
-	font-size:25px !important;
-	font-weight:240 !important;
-	position: relative;
-  background-image: url(https://www.cherin-cherin.com/wp-content/uploads/2022/02/IMG_9681.jpg);
-  border-radius: 10px;
-	box-shadow: 0 0 4px rgba(0, 0, 0, 0.23);
-  border: solid 1.5px #6e839c;
-}
-
-.learn-press-filters>li
-{display:none;}
-
-/* レッスン進捗の文字が見えないので修正 */
-.earn-press-profile-course__progress,
-.lp_profile_course_progress__header th{
-background:#daecf2!important;
-}
-
-.number,
-.content-item-wrap, .content-item-description p {
-	padding-bottom:0.1em;
-	color:#444!important;
-}
-
-.course-description p{
- line-height: 1.5em;	
-}
-
-.lp-table tr td,
-.lp-archive-courses tr th{
-	padding:0;
-}
-
-/*Learnpress行間調整*/
-.content-item-wrap .content-item-description p{
-	line-height: 1.5em;
-}
-
-/*AllCourses リスト行間調整*/
-.course-content{	margin:10px 10px 0px 0px;
-}
-.course-title{
-	display:block;
-	font-weight:500;
-}
-
-/*Learnpressボタン黒色をなおす*/
-.wp-block-button__link{
-	background: var(--lp-primary-color);	
-}
-
-/*Learnpressコースリストのバック*/
-.learn-press-courses[data-layout=list] .course-item {
-	background: #f0efe9;
-}
-
-.learn-press-courses[data-layout=list] .course {
-	padding: 10px;
-}
-
-/*Learnpressプロフの不要表示を消す*/
-#learn-press-profile #profile-nav .lp-profile-nav-tabs,
-#learn-press-profile .wrapper-profile-header,
-#profile-nav,
-#profile-sidebar {
-  display: none;
-}
-
-/* Learnpress受講中レッスン詳細ボックス*/
-#learn-press-profile #profile-content {
-  float: center;
-  width: 100%;
-  margin-bottom: 60px;
-  padding-top:0;
-}
-
-.lp-user-profile,
-.lp-profile-content{
-	padding-top:0;
-}
-.user-lesson {
-	font-size:1.3em!important;
-	letter-spacing:0.1em;
-	font-weight:500;
-    line-height:1.5em;
-    border-bottom:3px dotted #ccc;
-    margin:0 3em!important;
-    padding-bottom:12px;
-}
-
-/* Learnpressプロフ画面の謎ボックスを消す*/
-#learn-press-profile .dashboard-general-statistic__row .statistic-box {
-  width: 270px;
-  margin: 0 15px 40px 15px;
-  padding: 10px 5px 5px 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: #f9fafc;
-  text-align: center;
-}
-
-#learn-press-profile .dashboard-general-statistic__row .statistic-box:hover {
-  background: #f9fafc;
-}
-
-/*Learnpress受講レッスン数のボックスを消す*/
-.learn-press-profile-course__statistic,
-.learn-press-profile-course__statistic{
-	display: none;}
-
-/*Learnpress浮いてる注文ボックスを固定する*/
-course-summary .course-summary-sidebar {
-  position: static;
-}
-.course-summary .course-summary-sidebar.slide-down .course-summary-sidebar__inner {
-   position: static;
-   top: 0;
-}
-.course-summary .course-summary-sidebar.slide-top .course-summary-sidebar__inner {
-  position: static;
-}
-
-/*Learnpress 注文画面のアカウント作成ボックスを消す*/
-.lp-checkout-form label.lp-guest-checkout-output {
-display: none;	
-}
-.lp-checkout-form .lp-guest-checkout-notice {
-display: none;	
-}
-
-/*Learnpressレッスン詳細のバックグラウンドと文字色*/
-.lp-archive-courses
-.course-detail-info{
-	color: #5d627b;
-}
-
-.lp-archive-courses
-.course-summary-content .course-title{
-    color: #444;
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-.lp-archive-courses .course-meta__pull-left .meta-item__value>div a {
-    color: #444;
-}
-
-.lp-archive-courses .course-meta__pull-left .meta-item__value lavel {
-    color: #444;
-}
-
-.lp-archive-courses .course-summary-content .course-info-left {
-    margin-left: 20px;
-}
-
-/*Learnpress一部のボタンが消えてしまったので薄ブルーに色付け*/
-.learnpress-page .lp-button, .learnpress-page #lp-button{
-	background: #daecf2;
-	
-}
-
-/*Learnpress今すぐ始めるボタンなどのカスタム*/
-@media screen and (max-width: 960px) {
-	
-.lp-course-buttons button{
-	margin-bottom:-230px;
-	}
-	
-.lp-course-progress {
-	margin-bottom:-0.3em;
-	}
-
-.course-summary-sidebar .course-sidebar-preview{
-	margin-bottom:0;
-	}	
-	
-	
-.course-results-progress, .course-time,
-.course-price {	
-	padding:0.6em;
-    background:#f0efe9!important;
-	box-shadow: 0px 0px 6px 0px #c7c7c7; 
-	border-radius:5px;
-	}	
-	
-.course-summary-sideba,
-.course-sidebar-preview{
-	z-index: 500;
-	position: fixed;
-    bottom: 4em;
-    left: 2em;
-	width:300px;
-    background:transparent!important;
-}		
-	
-.course-results-progress,
-.course-time, 
-.course-price{
-	background: white;
-}	
-	
-.media-preview img{
-	display:none;
-}		
-.course-price{
-	display:none;
-	margin:10px 0 0;
-	background: white;
-}	
-
-/*960pxまで１カラム表示　エラーが出たら２カラムに戻す*/
-.lp-archive-courses,
-.lp-entry-content,
-.entry-content-left{
-    flex-direction:column!important;
-	width:100%!important;
-    margin-bottom: 0px!important;
-}
-	
-.course-summary-sidebar__inner>div{
-    padding:0!important;
-	}	
-.course-summary-sidebar, .course-summary-sidebar__inner {
-	margin:0 0 50px!important;
-	}	
-}
-
-@media screen and (max-width: 600px) {
-	
-.lp-content-area{
-	padding:0
-}		
-	
-.lp-course-buttons button{
-	margin-bottom:-200px;
-	}	
-	
-.course-sidebar-preview{
-  bottom: 3em;
-  left: 1rem;
-	height:70px;
-	width:200px;	
-	}
-
-.media-preview img{
-	display:none;
-	}
-
-.course-summary-sidebar .course-results-progress .items-progress__heading, .course-progress__heading{
-	line-height:0.8em;
-		font-size:0.8em;
-	}	
-
-.course-sidebar-preview, .course-time-row time{
-	font-size:0.8em;
-}
-.course-sidebar-preview .course-time{
-		margin-bottom:-160px;
-}
-}
-/***** learn press ********/
-
 
 /*******展開ボックス*********/
+
 .ac-box{
 width: auto;
 margin: 10px auto;
@@ -1410,7 +930,8 @@ font-weight: 600;
     border-bottom: dashed 2px #9f9f9f ;
 }
 
-@media screen and (min-width:601px) and ( max-width:960px) {
+/*タブレット*/
+@media (min-width:768px) and (max-width:1024px) {
 .ac-small h3{
 padding:0%;
 }
@@ -1419,7 +940,8 @@ padding:0%;
 }
 }
 
-@media screen and (max-width: 600px) {
+/*スマホ*/
+@media screen and (max-width: 767px) {
 .ac-small section {
 	padding:0 10px;
 	display:block;
@@ -1446,11 +968,11 @@ line-height:1.5em;
 }
 }
 
-
 /********展開ボックス********/
 
 
 /*******Topへ戻るボタン******/
+
 .pagetop {
 z-index: 500;
 cursor: pointer; 
@@ -1469,7 +991,7 @@ opacity: 10;
 opacity: 10;
 }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 768px) {
 .pagetop {
 bottom: 6em;
 right: 6em;
@@ -1481,10 +1003,12 @@ opacity: 10;
 }
 
 }
+
 /*******Topへ戻るボタン******/
 
 
 /********ハンバーガー********/
+
 body {
 line-height: 1;
 padding: 55px 0px;
@@ -1598,15 +1122,16 @@ padding: 55px 0px;
   display: block;
 }
 
-/* メニューボタンをスマホサイト以外で消す スマホのみは600px*/
-@media screen and (min-width: 960px) {
+/* menuボタンをpcで消す */
+@media (min-width: 1025px) {
 	
 .humb-btn {
 	display: none;
 }	
 }
 
-@media screen and (max-width: 600px) {
+/* スマホ */
+@media (max-width: 767px) {
 .humb{
   width: 90vw;
   height: 60vh;
@@ -1647,7 +1172,7 @@ padding: 55px 0px;
 
 
 /*****スマホとタブレット******/
-@media screen and (max-width: 960px) {
+@media (max-width: 1024px) {
 
 	/* レッスンページのレイアウト調整 */
 	#popup-course .popup-header__inner{
@@ -1826,11 +1351,13 @@ margin-bottom:-1em!important;
 	}
 	
 }
+
 /*****スマホとタブレット******/
 
 
 /****** タブレットのみ ******/
-@media screen and (min-width:601px) and ( max-width:960px) {
+
+@media (min-width:768px) and (max-width:1024px) {
 	
 .contentli{
 	font-size:17px !important;
@@ -1881,35 +1408,22 @@ height: auto;
 	}
 	
 }
+
 /****** タブレットのみ ******/
 
 
 /******** スマホのみ ********/
-@media screen and (max-width: 768px) {
 
-.um-misc-img::after{
-	white-space:pre;
-	content: '\Aサイトの利用状況をみる';
-    font-size: 12px;
-	font-weight:300;
+@media (max-width: 767px) {
 
-}	
-	
-.user-lesson {
-text-align: center; 
-font-size:1em;
-margin:0 1em!important;
+/* モバイルおすすめ書籍等の紹介部分 */
+.mobile_osusume {
+  line-height:1.5em!important;
 }
-	
-.um{
-	margin-bottom:0!important;
-	}
+.mobile_osusume img{
+  display:block; width:70%; margin: 0 auto;
+}	
 
-.um-misc-ul li { 
-	text-align: center;
-	list-style:none
-	}
-	
 .kasure p {
 	line-height:1.5em;
 }
@@ -1991,101 +1505,9 @@ margin-bottom:1.5em;
 width:110px;
 margin:0;
 }	
-}
-	
-/******** スマホのみ ********/
-	
-
-/* その他の特殊なレイアウト */	
-/* タブレットでプロセス画像を横並びに */	
-@media (max-width: 768px){
-/* (min-width: 600px)*/
-
-	.mobile_osusume {line-height:1.5em!important;}
-	
-	.mobile_osusume img{display:block; width:70%; margin: 0 auto;}	
-	
-.column-narabi{
-flex-basis: 0!important;
-flex-grow: 1!important;
-flex-wrap: nowrap!important;
-}
-
-/*スマホ下部固定ナビ*/
-  .mobile-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    background: #fff;
-    border-top: 1px solid #ccc;
-    z-index: 9999;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
-  }
-
-  .mobile-nav a {
-    flex: 1;
-    text-align: center;
-    padding: 0px 0;
-    font-size: 12px;
-    color: #333;
-    text-decoration: none;
-  }
-
-  .mobile-nav span {
-    display: block;
-    font-size: 20px;
-    margin-bottom: 2px;
-  }
-
-  .mobile-nav small {
-    font-size: 12px;
-    display: block;
-    line-height: 1;
-	}
-
-  .dropdown.open .dropdown-menu {
-    display: block !important;
-  }
-
-  .dropdown-menu {
-    display: none !important;
-    position: absolute;
-    bottom: 58px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #ffffff;
-    border: 1px solid #ccc;
-    padding: 8px 0;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    z-index: 10000;
-    min-width: 140px; /* ←これ追加で幅整う！ */
-  }
-
-  .dropdown-menu a {
-    display: block;
-    padding: 0px 5px;
-    font-size: 14px;
-    color: #333;
-    text-decoration: none;
-    transition: background 0.2s ease;
-  }
-
-  .dropdown-menu a:hover {
-    background: #f0f0f0;
-  }
 
 
-  .dropdown-toggle {
-    background: none;
-    border: none;
-    font-size: 16px;
-    padding: 0;
-    cursor: pointer;
-  }
+/******** スマホ下部固定ナビ ********/
 
 .mobile-nav {
   display: flex;
@@ -2095,6 +1517,7 @@ flex-wrap: nowrap!important;
   border-top: 1px solid #ccc;
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   z-index: 20000;
   list-style: none;
@@ -2114,12 +1537,24 @@ flex-wrap: nowrap!important;
   text-decoration: none;
   color: #333;
   font-size: 12px;
-  padding: 0px 0 3px;
+  padding: 0 0 3px;
 }
 
 .mobile-nav i {
   font-size: 20px;
   margin-bottom: 2px;
+}
+
+.mobile-nav span {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.mobile-nav small {
+  font-size: 12px;
+  display: block;
+  line-height: 1;
 }
 
 /* ドロップダウンメニュー */
@@ -2129,30 +1564,56 @@ flex-wrap: nowrap!important;
   bottom: 60px;
   left: 45%;
   transform: translateX(-50%);
-  background: white;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Safari対策 */
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 10px 0;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   z-index: 20001;
   list-style: none;
-	background-color: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* Safari対策 */
+  min-width: 140px;
 }
-	
+
+.dropdown-menu a {
+  display: block;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+  background: #f0f0f0;
+}
 
 .dropdown.open .dropdown-menu {
-  display: block;
+  display: block !important;
 }
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  font-size: 16px;
+  padding: 0;
+  cursor: pointer;
+}
+/******** スマホ下部固定ナビ ********/
+}	
+
+
+/******** スマホのみ ********/
 	
+/* その他の特殊なレイアウト */	
+/* タブレットでプロセス画像を横並びに */	
+@media (max-width: 767px){
+/* (min-width: 600px)*/
+	
+.column-narabi{
+flex-basis: 0!important;
+flex-grow: 1!important;
+flex-wrap: nowrap!important;
 }
-
-
-/*何に使われているかわからないもの*/		
-p.box {
-      height: 6.8em;
-      overflow: auto;
-      border: #1e73be 1px dashed;
-      background-color: #c8f1f4;
 }
