@@ -343,24 +343,27 @@ display: none;
 /*Learnpress今すぐ始めるボタンなどのカスタム*/
 /*スマホ・タブレット*/
 @media (max-width: 1024px) {
-	
+
+/*今すぐ始めるボタンの位置*/
+.course-summary-sidebar
 .lp-course-buttons button{
-	margin-bottom:-230px;
-	}
-	
-.lp-course-progress {
-	margin-bottom:-0.3em;
+	margin-bottom:0;
 	}
 
+/*ボックス全体の調整*/
 .course-summary-sidebar .course-sidebar-preview{
 	margin-bottom:0;
 	}	
-	
-	
+
+.course-sidebar-preview
+.course-time {
+	margin-bottom:0;
+	}	
+
 .course-results-progress, .course-time,
 .course-price {	
 	padding:0.6em;
-    background:#f0efe9!important;
+background:#f0efe9!important;
 	box-shadow: 0px 0px 6px 0px #c7c7c7; 
 	border-radius:5px;
 	}	
@@ -369,26 +372,40 @@ display: none;
 .course-sidebar-preview{
 	z-index: 500;
 	position: fixed;
-    bottom: 4em;
-    left: 2em;
+  bottom: 4em;
+  left: 2em;
 	width:300px;
-    background:transparent!important;
-}		
+background:transparent!important;
+	}		
+
+.media-preview img{
+	display:none;
+}
 	
-.course-results-progress,
+/*.lp-course-buttons button{
+	margin-bottom:-230px;
+	}
+		
+.lp-course-progress {
+	margin-bottom:-0.3em;
+	}
+	
+.course-sidebar-preview .course-time-low{
+margin-bottom:-135px;
+	}*/
+	
+/*.course-results-progress,
 .course-time, 
 .course-price{
 	background: white;
-}	
-	
-.media-preview img{
-	display:none;
-}		
-.course-price{
+}*/
+
+/*.course-price{
 	display:none;
 	margin:10px 0 0;
 	background: white;
-}	
+}*/
+	
 
 /*スマホ・タブレットまで１カラム表示　エラーが出たら２カラムに戻す*/
 .lp-archive-courses,
