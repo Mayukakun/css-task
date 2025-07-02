@@ -363,19 +363,19 @@ display: none;
 .course-results-progress, .course-time,
 .course-price {	
 	padding:0.6em;
-background:#f0efe9!important;
+	background:#f0efe9!important;
 	box-shadow: 0px 0px 6px 0px #c7c7c7; 
 	border-radius:5px;
 	}	
 	
-.course-summary-sideba,
+/*.course-summary-sidebar,（含めると邪魔な会員ボックスが出現する)*/
 .course-sidebar-preview{
 	z-index: 500;
 	position: fixed;
-  bottom: 4em;
-  left: 2em;
+	bottom: 4em;
+	left: 2em;
 	width:300px;
-background:transparent!important;
+	background:transparent!important;
 	}		
 
 .media-preview img{
@@ -407,7 +407,7 @@ margin-bottom:-135px;
 }*/
 	
 
-/*スマホ・タブレットまで１カラム表示　エラーが出たら２カラムに戻す*/
+/* スマホ・タブレットまで１カラム表示 */
 .lp-archive-courses,
 .lp-entry-content,
 .entry-content-left{
@@ -426,11 +426,13 @@ margin-bottom:-135px;
 
 /*スマホ*/
 @media (max-width: 767px) {
-	
+
+/* コンテンツの幅 */
 .lp-content-area{
 	padding:0
 }		
-	
+
+/* ボックス全体の調整 */
 .lp-course-buttons button{
 	margin-bottom:-200px;
 	}	
@@ -442,20 +444,25 @@ margin-bottom:-135px;
 	width:200px;	
 	}
 
-.media-preview img{
-	display:none;
-	}
-
+/* 進捗状況ボックス */
+.course-sidebar-preview .course-time{
+	margin-bottom:-190px;
+}
+	
 .course-summary-sidebar .course-results-progress .items-progress__heading, .course-progress__heading{
 	line-height:0.8em;
-		font-size:0.8em;
+	font-size:0.8em;
 	}	
 
+/* 講座終了予定日 */
+.course-sidebar-preview .course-time-row{
+	margin-bottom:-140px;
+	background:#fff;
+	line-height:1.5em;
+}
+	
 .course-sidebar-preview, .course-time-row time{
 	font-size:0.8em;
-}
-.course-sidebar-preview .course-time{
-		margin-bottom:-160px;
 }
 }
 /***** learn press ********/
