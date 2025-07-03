@@ -53,12 +53,26 @@
 
 /**********ブログパーツや囲み*********/
 
-/*ブルーのメモカード*/
+/* どこに使ったかわからない */
+.mini {
+    font-size:90%;
+    color:#8a7440;
+    display:inline-block;
+    line-height:1.5em;
+    margin:0 0 0 13px;
+}
+
+/* pcで消したいもの */
+.pc_space{
+	display:none
+}
+
+/* ブルーのメモカード */
 .memocards{
 	font-size:90%;
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.23);
-    border: solid 1.5px #fafafa;
-    opacity: 0.88;
+  border: solid 1.5px #fafafa;
+  opacity: 0.88;
 	background: #edf5f7;
 	border-radius: 20px;
 	margin: 2em 0;
@@ -66,7 +80,7 @@
 }
 
 
-/* くまぼぅさんと吹き出し*/
+/* くまぼぅさんと吹き出し */
 .kumabo {
 	font-size:13px;
 	font-weight:400;
@@ -120,7 +134,6 @@ margin-bottom:1em;
   border-bottom: 15px solid transparent;
 }
 
-
 /* finishフレーム*/
 .finish-flame {
 	padding:0.5em 0 1.5em 0;
@@ -133,7 +146,6 @@ margin-bottom:1em;
 .zairyou-title{
 font-size:20px!important;
 }
-
 .zairyou-flame{
 	padding:0 1em;
 }
@@ -141,7 +153,6 @@ font-size:20px!important;
 font-size:15px;
 line-height:1.6em!important;
 }
-
 .zairyou-flame-title{
 letter-spacing:0.1em;
 line-height:1em;
@@ -159,13 +170,13 @@ border-bottom:2px dotted #ccc;
 	letter-spacing:0.2em;
 font-size:20px !important;
 	font-weight:250!important;
-	}	
+}	
 .leaf-title-moji{
 	margin:0 0 0.5em!important;
-	}		
+}		
 .leaf-title img{
 	margin:0 0 0em !important;
-	}
+}
 
 .recipe-title-leaf {
 margin:0em 0em 3.5em 0em!important;
@@ -189,8 +200,6 @@ margin: 2em 0!important;
 font-size:15px !important;
 	padding: 0.5em 0em;
 }
-
-
 
 /*囲み装飾*/	
 .kakomi1 {
@@ -256,7 +265,6 @@ margin:2em 0!important;
     margin: 0 0 14px; 
     padding: 0;
 }
-
 
 /*ブログタイトルの装飾*/
 .stitch_title {
@@ -626,6 +634,12 @@ margin: 0 0 1.5rem;
 
 /******レイアウトの調整*******/
 
+/*全体の文字装飾*/
+body {
+	font-size:16px;
+  font-weight:260;
+}
+
 /*PC表示の周囲余白を調整*/
 @media (min-width: 1025px) {
 	body .site {
@@ -634,15 +648,56 @@ margin: 0 0 1.5rem;
 }
 }
 
-.pc_space{
-	display:none
-}
-
-.wp-block-buttons{
+/*ボタン余白*/
+.wp-block-buttons {
 	margin:10px;
 }
 
-/* フッター関連ボックスのスペース調整 */
+/*サイドバー余白*/
+.widget-area .widget {
+    margin-bottom:0;
+}
+
+/*文章ごとの余白*/
+.entry-content p{
+	line-height:1.5em;
+	margin:0 0 14px;
+}
+
+/*表内のフォント大きさ*/		
+.wp-block-table td{
+	font-size: 13px;
+}
+
+/*ブログ一覧のページ数文字を大きくする*/
+.blog_page {
+	  font-size: 18px;
+}
+
+/*ブログボックスの黒点を消す*/
+.blog_box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/*ブログタイトルのリンク線を消す*/
+.blog_title a{
+    text-decoration:none;
+	  color: #444;
+}
+
+/*ブログタイトル等のリンク後の文字色を濃く*/
+.widget-area .widget a {
+	color: #444;
+}
+.widget-area .widget a:visited {
+	color: #444;
+}
+.entry-content a:visited, .comment-content a:visited {
+    color: #444;
+}
+
+/* フッター関連ボックスの余白調整 */
 .osusume_title {line-height:1.3em!important;
 margin:0px!important;
 padding:0 0 0.5em;
@@ -671,21 +726,16 @@ margin:2em 0 1.5em!important;
 	margin:0;
 }
 
-/*表内のフォント大きさ*/		
-.wp-block-table td{
-	font-size: 13px;
+
+/*画像周囲の余白*/
+.wp-block-image{
+	margin:1em 0 0.5em;
 }
 
 /*画像のはみ出しを修正*/
 .fit_img {
     max-width: 100%;
     height: auto;
-}
-
-/*全体の文字装飾*/
-body {
-	font-size:16px;
-  font-weight:260;
 }
 
 /*全ての画像の影を消す*/
@@ -699,41 +749,7 @@ img.wp-post-image {
     box-shadow: none;
 }
 
-/*ブログ一覧のページ数文字を大きくする*/
-.blog_page {
-	  font-size: 18px;
-}
-
-/*ブログボックスの黒点を消す*/
-.blog_box ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.lp-archive-courses ul {
-	list-style-type:none;
-	padding:0;
-}
-
-/*ブログタイトルのリンク線を消す*/
-.blog_title a{
-    text-decoration:none;
-	  color: #444;
-}
-
-/*ブログタイトル等のリンク後の文字色を濃く*/
-.widget-area .widget a {
-	color: #444;
-}
-.widget-area .widget a:visited {
-	color: #444;
-}
-.entry-content a:visited, .comment-content a:visited {
-    color: #444;
-}
-
 /*****レイアウトの調整********/
-
 
 
 /*******展開ボックス*********/
