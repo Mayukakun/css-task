@@ -35,8 +35,7 @@ button.course-btn-continue:before {
 	font-size:13px;
 }
 
-
-/*learnpress オーダーページ消す*/
+/*learnpress 注文画面の表示を消す*/
 .order_hamusan img{
 	display: block;
 	margin: 40px auto;
@@ -61,190 +60,51 @@ button.course-btn-continue:before {
 	display:none;
 }
 
+/*Learnpress 注文画面のアカウント作成ボックスを消す*/
+.lp-checkout-form label.lp-guest-checkout-output {
+display: none;	
+}
+.lp-checkout-form .lp-guest-checkout-notice {
+display: none;	
+}
+
 /****** アップデート時に注意箇所 *******/
 
 
 
 /****** learn press *******/
-
-.course-description p{
-margin-bottom:1em;
-}
-.course-description img{
-margin:0.5em;
-}
-
-/*learnpressレッスン返信の編集ボタン消すー編集ウインドウを作りたい*/
-.edit-link{
-	display:none;}
-
-.widget-area .widget{margin-bottom:0;}
-
-.mini{font-size:90%; color:#8a7440; display:inline-block; line-height:1.5em; margin:0 0 0 13px;}
-
-.entry-content p{
-	line-height:1.5em;
-	margin:0 0 14px;}
-.wp-block-image{
-	margin:1em 0 0.5em;}
-
-
-/*レッスンページのタイトル調整*/
-#popup-header .course-title a{
-	font-size:20px;
-}
-.fa{
-	font-size:23px;
-} 
-
-
 /*ログインしてくださいメッセージをやさしめグレーに*/
 .learn-press-message.error{
 	color:#706b5e;
 	background-color:#faf9f5;
 }
 
-
-/*横長携帯の場合はヘッダーフッターを消す*/
-@media(max-height:370px) {
-#popup-course 
-#popup-header {
-  width: 0;
-}	
-	
-.course-title {
-	display: none;
-}
-.back-course {
-	display: none;
-}
-.course-item-nav  {
-	display: none;
-}
-
-#popup-course 
-#popup-content {
-margin: 0 0 0 0;
-}
-
-#popup-course 
-#popup-footer {
-  width: 0 ;
-	padding: 0 ; 
-}
-}
-
-/*そしてヘッダーの文字色を見えるように*/
-#popup-course 
-#popup-header 
-.course-title a{
-color: #21759B;
-}
-
-#popup-course 
-#popup-header
-.back-course {
-color: #21759B;
-}
-
-
-/* レッスンボタン等調整 */
-.content-item-description section-kansei{
-	margin:1em 0;
-	font-size:16px!important;
-	display:block;
-	text-align:center;
-	font-weight:500;
-}
-
-.completed{
-	margin:0.5em 2em 2em!important;
-}
-
-.kansei{
-	margin-top:0.5em;
-	display:block;
-	color:purple;
-}
-
-/*レッスンリストの折りたたみボタン*/
-#sidebar-toggle{
-	background:#82abb0;
-	box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
-	border:1px solid #d9e0f1;
-	
-}
-
-/* learnpress レイアウト調整 */
-
-.lesson_flame {
-	padding: 1em!important;
-	font-size:25px !important;
-	font-weight:240 !important;
-	position: relative;
-  background-image: url(https://www.cherin-cherin.com/wp-content/uploads/2022/02/IMG_9681.jpg);
-  border-radius: 10px;
-	box-shadow: 0 0 4px rgba(0, 0, 0, 0.23);
-  border: solid 1.5px #6e839c;
-}
-
-.learn-press-filters>li
-{display:none;}
-
-/* レッスン進捗の文字が見えないので修正 */
-.earn-press-profile-course__progress,
-.lp_profile_course_progress__header th{
-background:#daecf2!important;
-}
-
-.number,
-.content-item-wrap, .content-item-description p {
-	padding-bottom:0.1em;
-	color:#444!important;
-}
-
-.course-description p{
- line-height: 1.5em;	
-}
-
-.lp-table tr td,
-.lp-archive-courses tr th{
-	padding:0;
-}
-
-/*Learnpress行間調整*/
-.content-item-wrap .content-item-description p{
-	line-height: 1.5em;
-}
-
-/*AllCourses リスト行間調整*/
-.course-content{	margin:10px 10px 0px 0px;
-}
-.course-title{
-	display:block;
-	font-weight:500;
-}
-
-/*Learnpressボタン黒色をなおす*/
-.wp-block-button__link{
-	background: var(--lp-primary-color);	
-}
-
-/*Learnpressコースリストのバック*/
-.learn-press-courses[data-layout=list] .course-item {
-	background: #f0efe9;
-}
-
-.learn-press-courses[data-layout=list] .course {
-	padding: 10px;
-}
-
-/*Learnpressプロフの不要表示を消す*/
+/*** learnpress　プロフィール ***/
+/* Learnpressプロフの不要表示を消す */
 #learn-press-profile #profile-nav .lp-profile-nav-tabs,
 #learn-press-profile .wrapper-profile-header,
 #profile-nav,
 #profile-sidebar {
   display: none;
+}
+/* Learnpressプロフの謎ボックスを消す*/
+#learn-press-profile .dashboard-general-statistic__row .statistic-box {
+  width: 270px;
+  margin: 0 15px 40px 15px;
+  padding: 10px 5px 5px 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f9fafc;
+  text-align: center;
+}
+#learn-press-profile .dashboard-general-statistic__row .statistic-box:hover {
+  background: #f9fafc;
+}
+
+/*Learnpress受講レッスン数のボックスを消す*/
+.learn-press-profile-course__statistic,
+.learn-press-profile-course__statistic {
+	display: none;
 }
 
 /* Learnpress受講中レッスン詳細ボックス*/
@@ -254,7 +114,6 @@ background:#daecf2!important;
   margin-bottom: 60px;
   padding-top:0;
 }
-
 .lp-user-profile,
 .lp-profile-content{
 	padding-top:0;
@@ -268,26 +127,164 @@ background:#daecf2!important;
     margin:0 3em!important;
     padding-bottom:12px;
 }
+/*** learnpress　プロフィール画面 ***/
 
-/* Learnpressプロフ画面の謎ボックスを消す*/
-#learn-press-profile .dashboard-general-statistic__row .statistic-box {
-  width: 270px;
-  margin: 0 15px 40px 15px;
-  padding: 10px 5px 5px 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: #f9fafc;
-  text-align: center;
+
+/*** learnpress　消したもの ***/
+/*横長携帯の場合はヘッダーフッターを消す*/
+@media(max-height:370px) {
+#popup-course 
+#popup-header {
+  width: 0;
+}		
+.course-title {
+	display: none;
+}
+.back-course {
+	display: none;
+}
+.course-item-nav  {
+	display: none;
+}
+#popup-course 
+#popup-content {
+margin: 0 0 0 0;
+}
+#popup-course 
+#popup-footer {
+  width: 0 ;
+	padding: 0 ; 
+}
 }
 
-#learn-press-profile .dashboard-general-statistic__row .statistic-box:hover {
-  background: #f9fafc;
+.learn-press-filters>li
+{display:none;}
+/*** learnpress　消したもの ***/
+
+
+/*** learnpress レッスンページ ***/
+/* 何かわからない */
+.completed{
+	margin:0.5em 2em 2em!important;
 }
 
-/*Learnpress受講レッスン数のボックスを消す*/
-.learn-press-profile-course__statistic,
-.learn-press-profile-course__statistic{
-	display: none;}
+/* レッスン返信の編集ボタン消すー編集ウインドウを作りたい */
+.edit-link {
+	display:none;
+}
+
+/*レッスンページのサイドバー折りたたみボタン*/
+#sidebar-toggle{
+	background:#82abb0;
+	box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+	border:1px solid #d9e0f1;	
+}
+/*レッスンページのタイトル調整*/
+#popup-header .course-title a {
+	font-size:20px;
+}
+.fa{
+	font-size:23px;
+} 
+
+/* ビデオとテキストのフレーム */
+.lesson_flame {
+	padding: 1em!important;
+	font-size:25px !important;
+	font-weight:240 !important;
+	position: relative;
+    background-image: url(https://www.cherin-cherin.com/wp-content/uploads/2022/02/IMG_9681.jpg);
+    border-radius: 10px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.23);
+    border: solid 1.5px #6e839c;
+}
+.content-item-description section-kansei {
+	margin:1em 0;
+	font-size:16px!important;
+	display:block;
+	text-align:center;
+	font-weight:500;
+}
+.kansei{
+	margin-top:0.5em;
+	display:block;
+	color:purple;
+}
+/*** learnpress レッスンページ ***/
+
+
+/*** learnpress　レイアウト調整 ***/
+/*Learnpress一部のボタンが消えてしまったので薄ブルーに色付け*/
+.learnpress-page .lp-button, .learnpress-page #lp-button{
+	background: #daecf2;
+}
+/*Learnpressボタン黒色をなおす*/
+.wp-block-button__link{
+	background: var(--lp-primary-color);	
+}
+
+.course-description p{
+margin-bottom:1em;
+}
+.course-description img{
+margin:0.5em;
+}
+
+/*ヘッダーの文字色を見えるように*/
+#popup-course 
+#popup-header 
+.course-title a{
+color: #21759B;
+}
+#popup-course 
+#popup-header
+.back-course {
+color: #21759B;
+}
+
+/* レッスン進捗の文字が見えないので修正 */
+.earn-press-profile-course__progress,
+.lp_profile_course_progress__header th{
+background:#daecf2!important;
+}
+.number,
+.content-item-wrap, .content-item-description p {
+	padding-bottom:0.1em;
+	color:#444!important;
+}
+.course-description p{
+ line-height: 1.5em;	
+}
+.lp-table tr td,
+.lp-archive-courses tr th{
+	padding:0;
+}
+.lp-archive-courses ul {
+	list-style-type:none;
+	padding:0;
+}
+
+/*Learnpress行間調整*/
+.content-item-wrap .content-item-description p{
+	line-height: 1.5em;
+}
+
+/*AllCourses リスト行間調整*/
+.course-content{
+    margin:10px 10px 0px 0px;
+}
+.course-title{
+	display:block;
+	font-weight:500;
+}
+
+/*Learnpressコースリストのバック*/
+.learn-press-courses[data-layout=list] .course-item {
+	background: #f0efe9;
+}
+.learn-press-courses[data-layout=list] .course {
+	padding: 10px;
+}
 
 /*Learnpress浮いてる注文ボックスを固定する*/
 course-summary .course-summary-sidebar {
@@ -301,15 +298,7 @@ course-summary .course-summary-sidebar {
   position: static;
 }
 
-/*Learnpress 注文画面のアカウント作成ボックスを消す*/
-.lp-checkout-form label.lp-guest-checkout-output {
-display: none;	
-}
-.lp-checkout-form .lp-guest-checkout-notice {
-display: none;	
-}
-
-/*Learnpressレッスン詳細のバックグラウンドと文字色*/
+/*Learnpress講座詳細のバックグラウンドと文字色*/
 .lp-archive-courses
 .course-detail-info{
 	color: #5d627b;
@@ -333,14 +322,10 @@ display: none;
 .lp-archive-courses .course-summary-content .course-info-left {
     margin-left: 20px;
 }
+/*** learnpress　レイアウト調整 ***/
 
-/*Learnpress一部のボタンが消えてしまったので薄ブルーに色付け*/
-.learnpress-page .lp-button, .learnpress-page #lp-button{
-	background: #daecf2;
-	
-}
 
-/*Learnpress今すぐ始めるボタンなどのカスタム*/
+/*** Learnpress今すぐ始めるボタンなどのカスタム ***/
 /*スマホ・タブレット*/
 @media (max-width: 1024px) {
 
@@ -353,29 +338,27 @@ display: none;
 /*ボックス全体の調整*/
 .course-summary-sidebar .course-sidebar-preview{
 	margin-bottom:0;
-	}	
-
+}	
 .course-sidebar-preview
 .course-time {
 	margin-bottom:0;
-	}	
-
+}	
 .course-results-progress, .course-time,
 .course-price {	
 	padding:0.6em;
-background:#f0efe9!important;
+	background:#f0efe9!important;
 	box-shadow: 0px 0px 6px 0px #c7c7c7; 
 	border-radius:5px;
-	}	
+}	
 	
-.course-summary-sideba,
+/*.course-summary-sidebar,（含めると邪魔な会員ボックスが出現する)*/
 .course-sidebar-preview{
 	z-index: 500;
 	position: fixed;
-  bottom: 4em;
-  left: 2em;
+	bottom: 4em;
+	left: 2em;
 	width:300px;
-background:transparent!important;
+	background:transparent!important;
 	}		
 
 .media-preview img{
@@ -407,7 +390,7 @@ margin-bottom:-135px;
 }*/
 	
 
-/*スマホ・タブレットまで１カラム表示　エラーが出たら２カラムに戻す*/
+/* スマホ・タブレットまで１カラム表示 */
 .lp-archive-courses,
 .lp-entry-content,
 .entry-content-left{
@@ -418,49 +401,54 @@ margin-bottom:-135px;
 	
 .course-summary-sidebar__inner>div{
     padding:0!important;
-	}	
+}	
 .course-summary-sidebar, .course-summary-sidebar__inner {
 	margin:0 0 50px!important;
-	}	
+}	
 }
 
 /*スマホ*/
 @media (max-width: 767px) {
-	
+
+/* コンテンツの幅 */
 .lp-content-area{
 	padding:0
 }		
-	
+
+/* ボックス全体の調整 */
 .lp-course-buttons button{
 	margin-bottom:-200px;
-	}	
+}	
 	
 .course-sidebar-preview{
   bottom: 3em;
   left: 1rem;
 	height:70px;
 	width:200px;	
-	}
+}
 
-.media-preview img{
-	display:none;
-	}
-
+/* 進捗状況ボックス */
+.course-sidebar-preview .course-time{
+	margin-bottom:-190px;
+}
+	
 .course-summary-sidebar .course-results-progress .items-progress__heading, .course-progress__heading{
 	line-height:0.8em;
-		font-size:0.8em;
-	}	
+	font-size:0.8em;
+}	
 
+/* 講座終了予定日 */
+.course-sidebar-preview .course-time-row{
+	margin-bottom:-140px;
+	background:#fff;
+	line-height:1.5em;
+}
+	
 .course-sidebar-preview, .course-time-row time{
 	font-size:0.8em;
 }
-.course-sidebar-preview .course-time{
-		margin-bottom:-160px;
-}
 }
 /***** learn press ********/
-
-
 
 
 /****** UM *******/
@@ -484,7 +472,6 @@ margin-bottom:-135px;
 .um :after{
 	text-decoration:none
 }
-
 
 /*スマホ*/
 @media (max-width: 767px) {
